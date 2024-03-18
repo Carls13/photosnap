@@ -42,7 +42,7 @@ export const FooterColumn = styled.div`
 export const FooterLabel = styled.span`
     color: ${WHITE};
 
-    font-family: League Spartan;
+    font-family: DM Sans;
     font-size: 15px;
     font-style: normal;
     font-weight: 500;
