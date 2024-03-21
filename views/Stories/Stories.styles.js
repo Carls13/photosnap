@@ -7,6 +7,11 @@ export const StoriesHeroContainer = styled.div`
     background-image: url('/assets/stories/desktop/moon-of-appalacia.jpg');
     background-size: cover;
     height: 90vh;
+
+    @media screen and (max-width: 1200px) {
+        background-image: url('/assets/stories/tablet/moon-of-appalacia.jpg');
+        height: unset;
+    }
 `;
 
 export const StoriesHeroInfoColumn = styled.div`

@@ -1,5 +1,5 @@
 import { BLACK } from "@photosnap/theme/colors.theme";
-import { DESKTOP_X_PADDING } from "@photosnap/theme/spacing.theme";
+import { DESKTOP_X_PADDING, MOBILE_X_PADDING, TABLET_X_PADDING } from "@photosnap/theme/spacing.theme";
 import styled from "styled-components";
 
 export const FeaturesGridContainer = styled.div`
@@ -8,6 +8,11 @@ export const FeaturesGridContainer = styled.div`
     gap: 50px;
     margin: 100px ${DESKTOP_X_PADDING};
     text-align: center;
+
+    @media screen and (max-width: 1200px) {
+        margin: 100px ${MOBILE_X_PADDING};
+        grid-template-columns: 1fr;
+    }
 `;
 
 export const FeatureContainer = styled.div`

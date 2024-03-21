@@ -3,6 +3,7 @@ import { Header } from "@photosnap/components/Header/Header";
 import { HeroContainer, HeroInfoColumn, HeroText, HeroTitle } from "../Home/Home.styles";
 import Image from "next/image";
 import { PricesTable } from "@photosnap/components/PricesTable/PricesTable";
+import { Plans } from "@photosnap/components/Plans/Plans";
 
 export const PricingView = () => {
     return (
@@ -17,6 +18,7 @@ export const PricingView = () => {
                 <Image src="/assets/pricing/tablet/hero.jpg" alt="pricing" className="tablet-image" width={830} height={490} />
                 <Image src="/assets/pricing/mobile/hero.jpg" alt="pricing" className="mobile-image" width={830} height={490} />
             </HeroContainer>
+            <Plans />
             <PricesTable />
             <Beta/>
         </>

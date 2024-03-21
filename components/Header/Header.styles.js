@@ -30,22 +30,9 @@ export const HeaderContainer = styled.header`
     }
 
     @media screen and (max-width: 1200px) {
-        padding-right: 25px;
-        justify-content: unset;
-        gap: 40px;
-
-       #cart-icon {
-            margin-left: auto;
-       } 
+        padding: 25px ${TABLET_X_PADDING};
     }
-
-    @media screen and (max-width: 1200px) {
-        padding: 50px ${TABLET_X_PADDING};
-        #burger {
-            display: unset;
-        }
-    }
-
+    
     @media screen and (max-width: 600px) {
         padding: 25px ${MOBILE_X_PADDING};
     }
@@ -56,7 +43,7 @@ export const HeaderOptions = styled.div`
     align-items: center;
     gap: 25px;
 
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 600px) {
         ${(props) => !props.isOpen ? css`display: none;` : ''};
         flex-direction: column;
         align-items: flex-start;

@@ -14,6 +14,12 @@ export const BetaContainer = styled.div`
 
     @media screen and (max-width: 1200px) {
         background-image: url('/assets/shared/tablet/bg-beta.jpg');
+            padding: 10px ${TABLET_X_PADDING};
+        }
+    }
+   
+    @media screen and (max-width: 600px) {
+        background-image: url('/assets/shared/mobile/bg-beta.jpg');
             flex-direction: column;
             padding: 10px ${TABLET_X_PADDING};
             gap: 10px;
