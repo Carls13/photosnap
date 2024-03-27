@@ -4,6 +4,7 @@ import { HeroContainer, HeroInfoColumn, HeroText, HeroTitle } from "../Home/Home
 import Image from "next/image";
 import { PricesTable } from "@photosnap/components/PricesTable/PricesTable";
 import { Plans } from "@photosnap/components/Plans/Plans";
+import { Footer } from "@photosnap/components/Footer/Footer";
 
 export const PricingView = () => {
     return (
@@ -21,6 +22,7 @@ export const PricingView = () => {
             <Plans />
             <PricesTable />
             <Beta/>
+            <Footer/>
         </>
     );
 };

@@ -3,12 +3,13 @@ import { FeaturesGrid } from "@photosnap/components/FeaturesGrid/FeaturesGrid";
 import { Header } from "@photosnap/components/Header/Header";
 import { HeroContainer, HeroInfoColumn, HeroInvite, HeroText, HeroTitle } from "../Home/Home.styles";
 import Image from "next/image";
+import { Footer } from "@photosnap/components/Footer/Footer";
 
 export const FeaturesView = () => {
     return (
         <>
             <Header />
-            <HeroContainer background="black">
+            <HeroContainer reverseMobile background="black">
                 <HeroInfoColumn>
                     <HeroTitle>FEATURES </HeroTitle>
                     <HeroText>We make sure all of our features are designed to be loved by every aspiring and even professional photograpers who wanted to share their stories. </HeroText>
@@ -19,6 +20,7 @@ export const FeaturesView = () => {
             </HeroContainer>
             <FeaturesGrid extended />
             <Beta/>
+            <Footer/>
         </>
     );
 };

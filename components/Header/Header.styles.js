@@ -9,7 +9,6 @@ export const HeaderContainer = styled.header`
     align-items: center;
     padding: 20px ${DESKTOP_X_PADDING};
     background-color: ${WHITE};
-    border-bottom: 1px solid ${WHITE};
 
     #burger {
         display: none;
@@ -35,6 +34,14 @@ export const HeaderContainer = styled.header`
     
     @media screen and (max-width: 600px) {
         padding: 25px ${MOBILE_X_PADDING};
+
+        #burger {
+            display: flex;
+        }
+
+        button {
+            display: none;
+        }
     }
 `;
 
@@ -46,22 +53,28 @@ export const HeaderOptions = styled.div`
     @media screen and (max-width: 600px) {
         ${(props) => !props.isOpen ? css`display: none;` : ''};
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         position: absolute;
-        top: 96px;
+        top: 70px;
         left: 0;
-        background: ${BLACK};
+        background: ${WHITE};
         width: 100vw;
-        padding: 48px 24px;
+        padding: 48px 0;
 
         span {
             width: 100%;
-            font-family: Manrope;
-            font-size: 24px;
+            font-family: DM Sans;
+            font-size: 15px;
             font-style: normal;
-            font-weight: 400;
-            line-height: 25px;
+            font-weight: 700;
+            line-height: 18px;
             letter-spacing: 2px;
+            text-align: center;
+        }
+
+        button, hr {
+            ${(props) => !props.isOpen ? css`display: none;` : css`display: block;`};
+            width: 80%;
         }
     }
 `;

@@ -13,10 +13,10 @@ export const Option = styled.span`
     line-height: 14px; /* 100% */
     letter-spacing: 2px;
     cursor: pointer;
-    color: ${BLACK};
+    color: ${props => props.headerLink ? BLACK : WHITE};
         
     a {
-        color: ${BLACK};
+        color: ${props => props.headerLink ? BLACK : WHITE};
         ${props => props.active ? activeStyle : null}
         text-decoration: none;
         &:hover {

@@ -2,6 +2,7 @@ import { Beta } from "@photosnap/components/Beta/Beta";
 import { Header } from "@photosnap/components/Header/Header";
 import { StoriesGrid } from "@photosnap/components/StoriesGrid/StoriesGrid";
 import { StoriesHeroContainer, StoriesHeroInfo, StoriesHeroInfoColumn, StoriesHeroInvite, StoriesHeroText, StoriesHeroTitle } from "./Stories.styles";
+import { Footer } from "@photosnap/components/Footer/Footer";
 
 export const StoriesView = () => {
     return (
@@ -18,6 +19,7 @@ export const StoriesView = () => {
             </StoriesHeroContainer>
             <StoriesGrid extended />
             <Beta/>
+            <Footer/>
         </>
     );
 };

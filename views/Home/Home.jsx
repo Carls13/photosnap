@@ -3,12 +3,13 @@ import { Header } from "@photosnap/components/Header/Header";
 import { StoriesGrid } from "@photosnap/components/StoriesGrid/StoriesGrid";
 import Image from "next/image";
 import { HeroContainer, HeroInfoColumn, HeroInvite, HeroText, HeroTitle } from "./Home.styles";
+import { Footer } from "@photosnap/components/Footer/Footer";
 
 export const HomeView = () => {
     return (
         <>
             <Header />
-            <HeroContainer background="black">
+            <HeroContainer reverseMobile background="black">
                 <HeroInfoColumn>
                     <HeroTitle>Create and share your photo stories. </HeroTitle>
                     <HeroText>Photosnap is a platform for photographers and visual storytellers. We make it easy to share photos, tell stories and connect with others.</HeroText>
@@ -28,7 +29,7 @@ export const HomeView = () => {
                     <HeroInvite onClick={() => window.location.href = 'https://carlosshb.com'}>GET AN INVITE &rarr;</HeroInvite>
                 </HeroInfoColumn>
             </HeroContainer>
-            <HeroContainer background="white">
+            <HeroContainer reverseMobile background="white">
                 <HeroInfoColumn>
                     <HeroTitle>DESIGNED FOR EVERYONE </HeroTitle>
                     <HeroText>Photosnap can help you create stories that resonate with your audience.  Our tool is designed for photographers of all levels, brands, businesses you name it. </HeroText>
@@ -41,6 +42,7 @@ export const HomeView = () => {
             
             <StoriesGrid />
             <FeaturesGrid />
+            <Footer/>
         </>
     );
 };

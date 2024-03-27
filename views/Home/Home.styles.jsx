@@ -7,6 +7,10 @@ export const HeroContainer = styled.div`
     align-items: center;
     background-color: ${props => props.background};
     color: ${props => props.background === 'white' ? 'black' : 'white'};
+    
+    @media screen and (max-width: 600px) {
+        flex-direction: ${props => props.reverseMobile ? 'column-reverse' : 'column'}
+    }
 `;
 
 export const HeroInfoColumn = styled.div`
@@ -18,10 +22,19 @@ export const HeroInfoColumn = styled.div`
     border-image-slice: 1;
     border-width: 5px;
     border-image-source: ${ACCENT_VERTICAL};
-    transform: translateY(-20px);
-    border-bottom: unset;
-    border-top: unset;
-    border-right: unset;
+    border-bottom: none;
+    border-top: none;
+    border-right: none;
+
+    @media screen and (max-width: 600px) {
+        border: 10px solid;
+        border-image-slice: 1;
+        border-width: 5px;
+        border-image-source: ${ACCENT_VERTICAL};
+        border-left: none;
+        border-bottom: none;
+        border-right: none;
+    }
 `;
 
 export const HeroTitle = styled.h1`
