@@ -34,6 +34,7 @@ export const HeroInfoColumn = styled.div`
         border-left: none;
         border-bottom: none;
         border-right: none;
+        padding: 80px 20px;
     }
 `;
 

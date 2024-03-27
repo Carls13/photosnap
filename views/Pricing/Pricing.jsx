@@ -10,7 +10,7 @@ export const PricingView = () => {
     return (
         <>
             <Header />
-            <HeroContainer background="black">
+            <HeroContainer reverseMobile background="black">
                 <HeroInfoColumn>
                     <HeroTitle>PRICING </HeroTitle>
                     <HeroText>Create your stories, Photosnap is a platform for photographers and visual storytellers. It’s the simple way to create and share your photos.</HeroText>

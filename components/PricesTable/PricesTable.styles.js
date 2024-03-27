@@ -1,5 +1,5 @@
 import { BLACK } from "@photosnap/theme/colors.theme";
-import { DESKTOP_X_PADDING, TABLET_X_PADDING } from "@photosnap/theme/spacing.theme";
+import { DESKTOP_X_PADDING, MOBILE_X_PADDING, TABLET_X_PADDING } from "@photosnap/theme/spacing.theme";
 import styled from "styled-components";
 
 export const TableContainer = styled.div`
@@ -11,6 +11,12 @@ export const TableContainer = styled.div`
 
     @media screen and (max-width: 1200px) {
         padding: 50px ${TABLET_X_PADDING};
+    }
+
+    @media screen and (max-width: 600px) {
+        margin: 30px ${MOBILE_X_PADDING};
+        max-width: 300px;
+        overflow-x: scroll;
     }
 `;
 
@@ -29,7 +35,7 @@ export const Table = styled.table`
     border: unset;
     font-family: DM Sans;
     width: 80%;
-    margin: 20px 10%;    
+    margin: 20px 10%; 
 `;
 
 export const TableHead = styled.thead`

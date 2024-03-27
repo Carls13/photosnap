@@ -50,6 +50,10 @@ export const HeaderOptions = styled.div`
     align-items: center;
     gap: 25px;
 
+    button {
+        display: none;
+    }
+
     @media screen and (max-width: 600px) {
         ${(props) => !props.isOpen ? css`display: none;` : ''};
         flex-direction: column;

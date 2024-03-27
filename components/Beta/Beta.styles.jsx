@@ -1,4 +1,4 @@
-import { WHITE } from "@photosnap/theme/colors.theme";
+import { ACCENT, WHITE } from "@photosnap/theme/colors.theme";
 import { DESKTOP_X_PADDING, TABLET_X_PADDING } from "@photosnap/theme/spacing.theme";
 import styled from "styled-components";
 
@@ -10,20 +10,27 @@ export const BetaContainer = styled.div`
     align-items: center;
     justify-content: space-between;
     padding: 0 ${DESKTOP_X_PADDING};
-    gap: 100px;
 
     @media screen and (max-width: 1200px) {
         background-image: url('/assets/shared/tablet/bg-beta.jpg');
-            padding: 10px ${TABLET_X_PADDING};
-        }
+        padding: 10px ${TABLET_X_PADDING};
     }
+    
    
     @media screen and (max-width: 600px) {
         background-image: url('/assets/shared/mobile/bg-beta.jpg');
-            flex-direction: column;
-            padding: 10px ${TABLET_X_PADDING};
-            gap: 10px;
-        }
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 10px ${TABLET_X_PADDING};
+        gap: 10px;
+        border: 10px solid;
+        border-image-slice: 1;
+        border-width: 5px;
+        border-image-source: ${ACCENT};
+        border-left: unset;
+        border-bottom: unset;
+        border-right: unset;
     }
 `;
 
@@ -36,10 +43,10 @@ export const BetaTitle = styled.h2`
     font-weight: 700;
     line-height: 48px;
     letter-spacing: 1.429px;
+    text-transform: uppercase;
 
     @media screen and (max-width: 600px) {
         font-size: 32px;
-        text-align: center;
     }
 `;
 
@@ -56,6 +63,5 @@ export const ArrowLink = styled.span`
 
     @media screen and (max-width: 600px) {
         font-size: 12px;
-        text-align: center;
     }
 `;

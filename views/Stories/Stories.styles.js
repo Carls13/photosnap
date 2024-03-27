@@ -21,6 +21,11 @@ export const StoriesHeroInfoColumn = styled.div`
     gap: 20px;
     width: 30%;
     color: ${WHITE};
+
+    @media screen and (max-width: 600px) {
+        width: 100%;
+        padding: 80px 20px;
+    }
 `;
 
 export const StoriesHeroTitle = styled.h1`
@@ -47,7 +52,7 @@ export const StoriesHeroInvite = styled.span`
     font-size: 12px;
     font-style: normal;
     font-weight: 700;
-    line-height: 0;
+    line-height: 15px;
     letter-spacing: 2px;
     cursor: pointer;
 `;
@@ -57,6 +62,6 @@ export const StoriesHeroInfo = styled.span`
     font-size: 12px;
     font-style: normal;
     font-weight: 700;
-    line-height: 0;
+    line-height: 15px;
     letter-spacing: 2px;
 `;

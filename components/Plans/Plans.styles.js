@@ -1,5 +1,5 @@
 import { BLACK, LIGHT_GRAY, WHITE, ACCENT } from "@photosnap/theme/colors.theme";
-import { DESKTOP_X_PADDING, TABLET_X_PADDING } from "@photosnap/theme/spacing.theme";
+import { DESKTOP_X_PADDING, MOBILE_X_PADDING, TABLET_X_PADDING } from "@photosnap/theme/spacing.theme";
 import styled, { css } from "styled-components";
 
 export const PricingContainer = styled.div`
@@ -10,6 +10,10 @@ export const PricingContainer = styled.div`
 
     @media screen and (max-width: 1200px) {
         margin: 30px ${TABLET_X_PADDING};
+    }
+
+    @media screen and (max-width: 1200px) {
+      margin: 30px ${MOBILE_X_PADDING};
     }
 
     .advanced-switch {

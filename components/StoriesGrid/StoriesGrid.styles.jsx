@@ -20,8 +20,10 @@ export const StoryContainer = styled.div`
     display: flex;
     flex-direction: column;
     height: 500px;
-
-    background-image: url('${props => props.desktopImage}');
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.25), 
+        rgba(0, 0, 0, 0.25)
+      ), url('${props => props.desktopImage}');
     background-size: cover;
     padding-left: 50px;
     padding-right: 50px;
